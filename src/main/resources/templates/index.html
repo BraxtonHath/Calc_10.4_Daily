@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://WWW.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="/">
+        <input type="double" name="numOne" />
+        <input type="double" name="numTwo"/>
+        <select id="operators" name="operators">
+            <option value="+">Add</option>
+            <option value="-">Subtract</option>
+            <option value="/">Divide</option>
+            <option value="*">Multiply</option>
+        </select>
+        <input type="submit" value="send" />
+    </form>
+
+
+ <h3 th:text="${pageData}"></h3>
+
+</body>
+</html>
+
